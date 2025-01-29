@@ -5,19 +5,15 @@ public class ChangeCase
         String str1="Great Power";    
         StringBuffer newStr=new StringBuffer(str1);    
             
-        for(int i = 0; i < str1.length(); i++) {    
-                
-            //Checks for lower case character    
-            if(Character.isLowerCase(str1.charAt(i))) 
-            {    
-                //Convert it into upper case using toUpperCase() function    
-                newStr.setCharAt(i, Character.toUpperCase(str1.charAt(i)));    
+        for(int i = 0; i < str1.length(); i++) 
+        {    
+            if(Character.isLowerCase(str1.charAt(i)))   //Checks for lower case character 
+            {     
+                newStr.setCharAt(i, Character.toUpperCase(str1.charAt(i)));    //Convert it into upper case using toUpperCase() function   
             }    
-            //Checks for upper case character    
-            else if(Character.isUpperCase(str1.charAt(i))) 
+            else if(Character.isUpperCase(str1.charAt(i)))   //Checks for upper case character   
             {    
-                //Convert it into upper case using toLowerCase() function    
-                newStr.setCharAt(i, Character.toLowerCase(str1.charAt(i)));    
+                newStr.setCharAt(i, Character.toLowerCase(str1.charAt(i)));   //Convert it into upper case using toLowerCase() function  
             }    
         }    
         System.out.println("Original String : " + str1);

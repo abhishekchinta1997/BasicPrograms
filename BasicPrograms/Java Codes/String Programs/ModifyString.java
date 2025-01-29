@@ -1,6 +1,6 @@
 public class ModifyString {
     public static void main(String[] args) {
-        String input = "abhishek";
+        String input = "hello";
         StringBuilder output = new StringBuilder();
         for(int i=0; i<input.length(); i++)
         {
