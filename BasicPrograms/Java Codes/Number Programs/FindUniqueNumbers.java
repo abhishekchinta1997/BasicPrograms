@@ -75,6 +75,18 @@ public class FindUniqueNumbers {
         }
     }
 
+    // Method 5: Using Bitwise XOR (^) operator
+    public static void findUniqueUsingXOR(int[] arr) 
+    {
+        int unique = 0; // Initialize unique variable
+        for (int i=0; i<arr.length; i++) 
+        {
+            unique = unique ^ arr[i]; // XOR all the elements
+        }
+        
+        System.out.println("The unique number is: " + unique);
+    }
+
     public static void main(String[] args) {
         int[] arr = {4, 5, 6, 4, 7, 8, 9, 9, 10};
         
@@ -82,5 +94,6 @@ public class FindUniqueNumbers {
         findUniqueUsingNestedLoop(arr);
         findUniqueUsingSorting(arr);
         findUniqueUsingHashing(arr);
+        findUniqueUsingXOR(arr);
     }
 }

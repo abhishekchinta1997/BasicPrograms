@@ -9,7 +9,11 @@ public class Fibonacci {
 		System.out.print("Fibanocci Series : ");
 		for(int i=0; i<terms; i++)
 		{
-			System.out.print(a + " ");
+			System.out.print(a);
+			if (i < terms) 
+			{
+                System.out.print(", ");
+            }
 			int nextTerm = a + b;
 			a = b;
 			b = nextTerm;

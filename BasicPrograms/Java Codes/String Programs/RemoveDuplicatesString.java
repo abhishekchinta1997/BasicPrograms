@@ -27,3 +27,27 @@ public class RemoveDuplicatesString
         System.out.println(sb.toString());
     }
 }
+
+
+
+
+// import java.util.ArrayList;
+
+// class Main {
+//     public static void main(String[] args) {
+//         String str = "programming";
+//         System.out.println("String : " +  str);
+        
+//         char[] strArray = str.toCharArray();
+//         ArrayList<String> al = new ArrayList<>();
+//         for(int i=0; i<strArray.length; i++)
+//         {
+//             String ch = Character.toString(strArray[i]);
+//             if(!al.contains(ch))
+//             {
+//                 al.add(ch);
+//             }
+//         }
+//         System.out.println(al.toString());
+//     }
+// }
